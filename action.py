@@ -1,12 +1,13 @@
 # ICS3U
 # Assignment 2: Action
-# <your name>
+# <Shaan>
 
 # adapted from http://www.101computing.net/getting-started-with-pygame/
 
 # Import the pygame library and initialise the game engine
 # Don't forget to import your class
 import pygame
+for snow import Snow
 pygame.init()
 
 # Define some colours
@@ -24,7 +25,15 @@ SCREENHEIGHT = 400
 # The window is defined as (width, height), measured in pixels
 size = (SCREENWIDTH, SCREENHEIGHT)
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption("My Animation")
+pygame.display.set_caption("Snow")
+
+speed = 1
+Snow = pygame.sprite.Group()
+
+for i in range(20):
+    mySnow.rect.x = random.randint(0,400)
+    mySnow.rect.y = random.randint(0,400)
+    Snow.add(mySnow)
 
 # This loop will continue until the user exits the game
 carryOn = True
@@ -41,7 +50,12 @@ while carryOn:
 
     # --- Game logic goes here
     # There should be none for a static image
-    
+    for snow in Snow:
+    snow.moveBackward(speed)
+    if snow.rect y > SCREENHEIGHT:
+       snow.changeSpeed(random.randint(5,20)
+       snow.rect.y = -200
+       snow.rect.x = random.randint(0,400)                 
     # --- Draw code goes here
 
     # Clear the screen to white

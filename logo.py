@@ -50,16 +50,16 @@ while carryOn:
     # Queue different shapes and lines to be drawn
     # pygame.draw.rect(screen, RED, [55, 200, 100, 70], 0)
     # pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
-    pygame.draw.ellipse(screen, LGREEN, [50,50, 300, 300], 0)
-    pygame.draw.ellipse(screen, WHITE, [100,140, 25, 25], 0)
-    pygame.draw.ellipse(screen, WHITE, [276,143, 25, 25], 0)
-    pygame.draw.ellipse(screen, WHITE, [110,180, 20, 20], 0)
-    pygame.draw.ellipse(screen, WHITE, [270,180, 20, 20], 0)
-    pygame.draw.ellipse(screen, WHITE, [120,220, 16, 16], 0)
-    pygame.draw.ellipse(screen, WHITE, [260,218, 16, 16], 0)
-    pygame.draw.arc(screen, WHITE, [100, 120, 200, 80], math.radians(0), math.radians(173), 25)
-    pygame.draw.arc(screen, WHITE, [100, 165, 200, 80], math.radians(25), math.radians(153), 20)
-    pygame.draw.arc(screen, WHITE, [100, 209, 200, 80], math.radians(43), math.radians(143), 15)
+    pygame.draw.ellipse(screen, LGREEN, [50,50, 300, 300], 0) #Main green circle
+    pygame.draw.ellipse(screen, WHITE, [100,140, 25, 25], 0) #White circle on the left or the top arc
+    pygame.draw.ellipse(screen, WHITE, [276,143, 25, 25], 0) #White circle on the right or the top arc
+    pygame.draw.ellipse(screen, WHITE, [110,180, 20, 20], 0) #White circle on the left or the middle arc
+    pygame.draw.ellipse(screen, WHITE, [270,180, 20, 20], 0) #White circle on the right or the middle arc
+    pygame.draw.ellipse(screen, WHITE, [120,220, 16, 16], 0) #White circle on the left or the bottom arc
+    pygame.draw.ellipse(screen, WHITE, [260,218, 16, 16], 0) #White circle on the right or the bottom arc
+    pygame.draw.arc(screen, WHITE, [100, 120, 200, 80], math.radians(0), math.radians(173), 25) #Top/largest arc
+    pygame.draw.arc(screen, WHITE, [100, 165, 200, 80], math.radians(25), math.radians(153), 20) #Middle/second largest arc
+    pygame.draw.arc(screen, WHITE, [100, 209, 200, 80], math.radians(43), math.radians(143), 15) #Bottom/smallest arc
 
     # Update the screen with queued shapes
     pygame.display.flip()
