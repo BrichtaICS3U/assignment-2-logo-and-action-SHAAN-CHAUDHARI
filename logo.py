@@ -8,6 +8,7 @@
 import pygame
 import math
 pygame.init()
+Font = pygame.font.SysFont('magnificent', 80)
 
 # Define some colours
 # Colours are defined using RGB values
@@ -26,9 +27,9 @@ size = (SCREENWIDTH, SCREENHEIGHT)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Shanns Logo")
 
-font = pygame.font.Font(None, 36)
-text = font.render("Spotify",1,(10,10,10))
-screen.blit(text, (50,50))
+
+text = Font.render('Spotify',1,(WHITE))
+screen.blit(text, (90, 295))
 
 # This loop will continue until the user exits the game
 carryOn = True
